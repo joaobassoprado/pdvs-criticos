@@ -1,56 +1,45 @@
-# 📣 Sistema de Reclamações de Empresas
+# 📋 Sistema de Formulário – PDVs Críticos
 
-Sistema simples para **registrar e editar reclamações relacionadas a empresas**, com controle básico de prioridade, motivo e permissões de acesso 🗂️.
+Sistema desenvolvido para **avaliação de PDVs**, permitindo o registro de respostas por questionário, vinculado a um ponto de venda e responsável.
 
----
-
-## 🎯 Objetivo
-
-Centralizar o registro de reclamações de forma organizada, permitindo edição e rastreio de alterações.
+O objetivo é **identificar criticidade**, **organizar dados** e **facilitar análises** através de um formulário simples e eficiente.
 
 ---
 
-## 🛠️ Tecnologias
+## 🚀 Funcionalidades
 
--   Laravel
--   Livewire Volt
--   Blade / Mary UI
--   Tailwind CSS
-
----
-
-## ✅ Funcionalidades
-
--   Cadastro de reclamações
--   Edição de reclamações existentes
--   Definição de prioridade
--   Associação com empresa e motivo
--   Controle de acesso por permissão
--   Registro de quem alterou (`updated_by`)
+- ✅ Seleção de **PDV**
+- ✅ Campo para **responsável**
+- ✅ Listagem dinâmica de **perguntas**
+- ✅ Respostas padronizadas (1, 2 ou 3)
+- ✅ Salvamento das respostas no banco de dados
+- ✅ Estrutura preparada para relatórios futuros
 
 ---
 
-## 🚦 Prioridades
+## 🛠️ Tecnologias Utilizadas
 
--   Baixa
--   Média
--   Alta
--   Urgente
-
----
-
-## 🔐 Controle de Acesso
-
-O acesso às telas é controlado via **Gates do Laravel**. Usuários sem permissão são redirecionados para a tela 403.
+- **PHP**
+- **Laravel**
+- **Livewire (Volt)**
+- **MySQL**
+- **Blade**
+- **Tailwind CSS**
 
 ---
 
-## 📌 Observações
+## 🧩 Estrutura do Sistema
 
--   Reclamações utilizam **soft delete**
--   Validações são feitas no backend
--   Sistema de uso interno
+### Entidades principais:
+- **PDVs** – Pontos de venda cadastrados
+- **Perguntas** – Perguntas do questionário
+- **Respostas** – Respostas vinculadas ao PDV e à pergunta
+
+### Relacionamentos:
+- Um **PDV** possui várias **Respostas**
+- Uma **Pergunta** pode aparecer em várias **Respostas**
 
 ---
 
-Sistema desenvolvido com foco em simplicidade, clareza e manutenção 🚀.
+## 🗂️ Estrutura do Projeto (simplificada)
+
