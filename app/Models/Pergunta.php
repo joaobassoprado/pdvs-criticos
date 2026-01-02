@@ -5,9 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Permission extends Model
+class Pergunta extends Model
 {
     use HasFactory;
+    
+    protected $fillable = ['data', 'responsavel', 'pdv_id', 'pergunta_id', 'resposta'];
 
-    protected $fillable = ['permission', 'profile_id', 'value'];
 }

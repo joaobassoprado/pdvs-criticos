@@ -1,8 +1,8 @@
 <x-guest-layout>
     <div class="flex items-center justify-center select-none mb-[32px]">
         <div class="hidden-when-collapsed mx-4 mt-3 font-black text-[#003CA2]">
-            <h1 class="text-4xl underline">Power Apps</h1>
-            <p class=" text-center">Gerenciamento</p>
+            <h1 class="text-4xl underline">Reclame Aqui</h1>
+            <p class=" text-center">Virginia</p>
         </div>
     </div>
 

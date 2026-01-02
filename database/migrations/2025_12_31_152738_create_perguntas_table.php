@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('permissions', function (Blueprint $table) {
+        Schema::create('perguntas', function (Blueprint $table) {
             $table->id();
-            $table->string("permission");
-            $table->foreignId('profile_id')->constrained('profiles')->onDelete('cascade');
-            $table->boolean('value')->default(true);
-            $table->timestamps();
+            $table->string('descricao');
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('permissions');
+        Schema::dropIfExists('perguntas');
     }
 };
